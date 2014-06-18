@@ -23,7 +23,6 @@ exports.desc = 'init scrat project';
 exports.register = function (commander) {
     commander
         .option('-c, --clean', 'clean template cache')
-        // .option('-f, --force', 'force replace exist files')
         .option('--skip-install', 'skip installation')
         .action(function () {
             var env = yeoman(),
@@ -31,7 +30,6 @@ exports.register = function (commander) {
                 options = args.pop(),
                 opts = {
                     clean: !!options.clean,
-                    force: !!options.force,
                     skipInstall: !!options.skipInstall
                 };
 
