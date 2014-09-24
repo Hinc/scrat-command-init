@@ -1,6 +1,6 @@
 {
   "name": "scrat-command-init",
-  "version": "0.1.1-4",
+  "version": "0.1.1-5",
   "description": "scrat project scaffold",
   "main": "index.js",
   "scripts": {
@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/Hinc/scrat-command-init",
   "dependencies": {
-    "yeoman-generator": "~0.17.0",
-    "colors": "~0.6.2",
-    "debug": "~1.0.2",
+    "yeoman-generator": "0.17.0",
+    "colors": "0.6.2",
+    "debug": "1.0.2",
     "generator-scrat": "0.2.1-2"
   }
 }
