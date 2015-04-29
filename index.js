@@ -22,14 +22,13 @@ exports.usage = '[options]'
 exports.desc = 'init scrat project';
 exports.register = function (commander) {
     commander
-        .option('-c, --clean', 'clean template cache')
         .option('--skip-install', 'skip installation')
         .action(function () {
             var env = yeoman(),
                 args = Array.prototype.slice.call(arguments),
                 options = args.pop(),
                 opts = {
-                    clean: !!options.clean,
+                    clean: true,
                     skipInstall: !!options.skipInstall
                 };
 
